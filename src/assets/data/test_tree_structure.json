@@ -1,0 +1,787 @@
+{
+  "id": 104,
+  "height": 111.49266505923562,
+  "branch_length": null,
+  "label": "Internal-104",
+  "children": [
+    {
+      "id": 100,
+      "height": 26.92748707625325,
+      "branch_length": 84.56517798298236,
+      "label": "Internal-100",
+      "children": [
+        {
+          "id": 66,
+          "height": 6.693225298416088,
+          "branch_length": 20.234261777837162,
+          "label": "Internal-66",
+          "children": [
+            {
+              "id": 29,
+              "height": 0.0,
+              "branch_length": 6.693225298416088,
+              "label": "Potra2n3c7642",
+              "children": []
+            },
+            {
+              "id": 58,
+              "height": 1.7904820359732334,
+              "branch_length": 4.902743262442855,
+              "label": "Internal-58",
+              "children": [
+                {
+                  "id": 56,
+                  "height": 0.4360618488242236,
+                  "branch_length": 1.3544201871490098,
+                  "label": "Internal-56",
+                  "children": [
+                    {
+                      "id": 19,
+                      "height": 0.0,
+                      "branch_length": 0.4360618488242236,
+                      "label": "Potra2n1c408",
+                      "children": []
+                    },
+                    {
+                      "id": 55,
+                      "height": 0.2110328884321115,
+                      "branch_length": 0.22502896039211212,
+                      "label": "Internal-55",
+                      "children": [
+                        {
+                          "id": 49,
+                          "height": 0.0,
+                          "branch_length": 0.2110328884321115,
+                          "label": "Potra2n9c18637",
+                          "children": []
+                        },
+                        {
+                          "id": 54,
+                          "height": 0.0,
+                          "branch_length": 0.2110328884321115,
+                          "label": "Internal-54",
+                          "children": [
+                            {
+                              "id": 20,
+                              "height": 0.0,
+                              "branch_length": 0.0,
+                              "label": "Potra2n1c728",
+                              "children": []
+                            },
+                            {
+                              "id": 53,
+                              "height": 0.0,
+                              "branch_length": 0.0,
+                              "label": "Internal-53",
+                              "children": [
+                                {
+                                  "id": 3,
+                                  "height": 0.0,
+                                  "branch_length": 0.0,
+                                  "label": "Potra2n11c22506",
+                                  "children": []
+                                },
+                                {
+                                  "id": 5,
+                                  "height": 0.0,
+                                  "branch_length": 0.0,
+                                  "label": "Potra2n12c24064",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": 57,
+                  "height": 1.0112103243143833,
+                  "branch_length": 0.7792717116588501,
+                  "label": "Internal-57",
+                  "children": [
+                    {
+                      "id": 27,
+                      "height": 0.0,
+                      "branch_length": 1.0112103243143833,
+                      "label": "Potra2n3c6880",
+                      "children": []
+                    },
+                    {
+                      "id": 31,
+                      "height": 0.0,
+                      "branch_length": 1.0112103243143833,
+                      "label": "Potra2n4c10245",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 94,
+          "height": 17.865436170178278,
+          "branch_length": 9.062050906074973,
+          "label": "Internal-94",
+          "children": [
+            {
+              "id": 81,
+              "height": 10.175960454423945,
+              "branch_length": 7.689475715754332,
+              "label": "Internal-81",
+              "children": [
+                {
+                  "id": 24,
+                  "height": 0.0,
+                  "branch_length": 10.175960454423945,
+                  "label": "Potra2n2c4592",
+                  "children": []
+                },
+                {
+                  "id": 78,
+                  "height": 8.819622002671089,
+                  "branch_length": 1.3563384517528565,
+                  "label": "Internal-78",
+                  "children": [
+                    {
+                      "id": 9,
+                      "height": 0.0,
+                      "branch_length": 8.819622002671089,
+                      "label": "Potra2n14c27365",
+                      "children": []
+                    },
+                    {
+                      "id": 50,
+                      "height": 0.0,
+                      "branch_length": 8.819622002671089,
+                      "label": "Potra2n9c18671",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": 90,
+              "height": 14.256659846717254,
+              "branch_length": 3.608776323461024,
+              "label": "Internal-90",
+              "children": [
+                {
+                  "id": 69,
+                  "height": 6.820739270782897,
+                  "branch_length": 7.4359205759343565,
+                  "label": "Internal-69",
+                  "children": [
+                    {
+                      "id": 0,
+                      "height": 0.0,
+                      "branch_length": 6.820739270782897,
+                      "label": "Potra2n10c20318",
+                      "children": []
+                    },
+                    {
+                      "id": 48,
+                      "height": 0.0,
+                      "branch_length": 6.820739270782897,
+                      "label": "Potra2n8c16843",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "id": 83,
+                  "height": 11.115892784207663,
+                  "branch_length": 3.1407670625095907,
+                  "label": "Internal-83",
+                  "children": [
+                    {
+                      "id": 10,
+                      "height": 0.0,
+                      "branch_length": 11.115892784207663,
+                      "label": "Potra2n14c27649",
+                      "children": []
+                    },
+                    {
+                      "id": 16,
+                      "height": 0.0,
+                      "branch_length": 11.115892784207663,
+                      "label": "Potra2n1c1161",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 103,
+      "height": 68.16657738952968,
+      "branch_length": 43.32608766970594,
+      "label": "Internal-103",
+      "children": [
+        {
+          "id": 101,
+          "height": 34.71307663797171,
+          "branch_length": 33.45350075155797,
+          "label": "Internal-101",
+          "children": [
+            {
+              "id": 93,
+              "height": 15.52407346456893,
+              "branch_length": 19.18900317340278,
+              "label": "Internal-93",
+              "children": [
+                {
+                  "id": 74,
+                  "height": 7.997896071676185,
+                  "branch_length": 7.526177392892746,
+                  "label": "Internal-74",
+                  "children": [
+                    {
+                      "id": 41,
+                      "height": 0.0,
+                      "branch_length": 7.997896071676185,
+                      "label": "Potra2n6c13086",
+                      "children": []
+                    },
+                    {
+                      "id": 59,
+                      "height": 4.7538397028086665,
+                      "branch_length": 3.2440563688675184,
+                      "label": "Internal-59",
+                      "children": [
+                        {
+                          "id": 13,
+                          "height": 0.0,
+                          "branch_length": 4.7538397028086665,
+                          "label": "Potra2n18c32995",
+                          "children": []
+                        },
+                        {
+                          "id": 52,
+                          "height": 0.0,
+                          "branch_length": 4.7538397028086665,
+                          "label": "Potra2n9c19448",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": 79,
+                  "height": 8.97175984130204,
+                  "branch_length": 6.55231362326689,
+                  "label": "Internal-79",
+                  "children": [
+                    {
+                      "id": 37,
+                      "height": 0.0,
+                      "branch_length": 8.97175984130204,
+                      "label": "Potra2n5c11879",
+                      "children": []
+                    },
+                    {
+                      "id": 67,
+                      "height": 6.715530224040393,
+                      "branch_length": 2.2562296172616474,
+                      "label": "Internal-67",
+                      "children": [
+                        {
+                          "id": 34,
+                          "height": 0.0,
+                          "branch_length": 6.715530224040393,
+                          "label": "Potra2n5c11119",
+                          "children": []
+                        },
+                        {
+                          "id": 47,
+                          "height": 0.0,
+                          "branch_length": 6.715530224040393,
+                          "label": "Potra2n7c15965",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": 98,
+              "height": 22.443236501509016,
+              "branch_length": 12.269840136462694,
+              "label": "Internal-98",
+              "children": [
+                {
+                  "id": 80,
+                  "height": 9.644890832974731,
+                  "branch_length": 12.798345668534285,
+                  "label": "Internal-80",
+                  "children": [
+                    {
+                      "id": 1,
+                      "height": 0.0,
+                      "branch_length": 9.644890832974731,
+                      "label": "Potra2n10c21792",
+                      "children": []
+                    },
+                    {
+                      "id": 45,
+                      "height": 0.0,
+                      "branch_length": 9.644890832974731,
+                      "label": "Potra2n6c15349",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "id": 92,
+                  "height": 15.51908396856378,
+                  "branch_length": 6.924152532945236,
+                  "label": "Internal-92",
+                  "children": [
+                    {
+                      "id": 51,
+                      "height": 0.0,
+                      "branch_length": 15.51908396856378,
+                      "label": "Potra2n9c18809",
+                      "children": []
+                    },
+                    {
+                      "id": 82,
+                      "height": 10.937379747910374,
+                      "branch_length": 4.581704220653407,
+                      "label": "Internal-82",
+                      "children": [
+                        {
+                          "id": 12,
+                          "height": 0.0,
+                          "branch_length": 10.937379747910374,
+                          "label": "Potra2n18c32336",
+                          "children": []
+                        },
+                        {
+                          "id": 28,
+                          "height": 0.0,
+                          "branch_length": 10.937379747910374,
+                          "label": "Potra2n3c7211",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 102,
+          "height": 39.36862438419759,
+          "branch_length": 28.79795300533209,
+          "label": "Internal-102",
+          "children": [
+            {
+              "id": 95,
+              "height": 18.154584819029413,
+              "branch_length": 21.214039565168175,
+              "label": "Internal-95",
+              "children": [
+                {
+                  "id": 85,
+                  "height": 11.996192110068375,
+                  "branch_length": 6.158392708961038,
+                  "label": "Internal-85",
+                  "children": [
+                    {
+                      "id": 62,
+                      "height": 5.530387304701183,
+                      "branch_length": 6.465804805367192,
+                      "label": "Internal-62",
+                      "children": [
+                        {
+                          "id": 25,
+                          "height": 0.0,
+                          "branch_length": 5.530387304701183,
+                          "label": "Potra2n2c5377",
+                          "children": []
+                        },
+                        {
+                          "id": 35,
+                          "height": 0.0,
+                          "branch_length": 5.530387304701183,
+                          "label": "Potra2n5c11252",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": 76,
+                      "height": 8.379359889733026,
+                      "branch_length": 3.6168322203353487,
+                      "label": "Internal-76",
+                      "children": [
+                        {
+                          "id": 44,
+                          "height": 0.0,
+                          "branch_length": 8.379359889733026,
+                          "label": "Potra2n6c14938",
+                          "children": []
+                        },
+                        {
+                          "id": 70,
+                          "height": 7.026786962996198,
+                          "branch_length": 1.352572926736828,
+                          "label": "Internal-70",
+                          "children": [
+                            {
+                              "id": 22,
+                              "height": 0.0,
+                              "branch_length": 7.026786962996198,
+                              "label": "Potra2n2c4167",
+                              "children": []
+                            },
+                            {
+                              "id": 63,
+                              "height": 5.667675953157518,
+                              "branch_length": 1.3591110098386796,
+                              "label": "Internal-63",
+                              "children": [
+                                {
+                                  "id": 6,
+                                  "height": 0.0,
+                                  "branch_length": 5.667675953157518,
+                                  "label": "Potra2n13c25584",
+                                  "children": []
+                                },
+                                {
+                                  "id": 36,
+                                  "height": 0.0,
+                                  "branch_length": 5.667675953157518,
+                                  "label": "Potra2n5c11515",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": 91,
+                  "height": 14.896075842203095,
+                  "branch_length": 3.2585089768263185,
+                  "label": "Internal-91",
+                  "children": [
+                    {
+                      "id": 73,
+                      "height": 7.815375164166251,
+                      "branch_length": 7.080700678036844,
+                      "label": "Internal-73",
+                      "children": [
+                        {
+                          "id": 26,
+                          "height": 0.0,
+                          "branch_length": 7.815375164166251,
+                          "label": "Potra2n2c5822",
+                          "children": []
+                        },
+                        {
+                          "id": 64,
+                          "height": 6.342168653544307,
+                          "branch_length": 1.473206510621944,
+                          "label": "Internal-64",
+                          "children": [
+                            {
+                              "id": 30,
+                              "height": 0.0,
+                              "branch_length": 6.342168653544307,
+                              "label": "Potra2n4c10106",
+                              "children": []
+                            },
+                            {
+                              "id": 33,
+                              "height": 0.0,
+                              "branch_length": 6.342168653544307,
+                              "label": "Potra2n571s36008",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": 88,
+                      "height": 13.473586932340377,
+                      "branch_length": 1.422488909862718,
+                      "label": "Internal-88",
+                      "children": [
+                        {
+                          "id": 72,
+                          "height": 7.457876583407192,
+                          "branch_length": 6.015710348933185,
+                          "label": "Internal-72",
+                          "children": [
+                            {
+                              "id": 11,
+                              "height": 0.0,
+                              "branch_length": 7.457876583407192,
+                              "label": "Potra2n16c29730",
+                              "children": []
+                            },
+                            {
+                              "id": 61,
+                              "height": 5.420396601725744,
+                              "branch_length": 2.0374799816814475,
+                              "label": "Internal-61",
+                              "children": [
+                                {
+                                  "id": 7,
+                                  "height": 0.0,
+                                  "branch_length": 5.420396601725744,
+                                  "label": "Potra2n13c26130",
+                                  "children": []
+                                },
+                                {
+                                  "id": 38,
+                                  "height": 0.0,
+                                  "branch_length": 5.420396601725744,
+                                  "label": "Potra2n5c12058",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "id": 77,
+                          "height": 8.591186147054046,
+                          "branch_length": 4.882400785286331,
+                          "label": "Internal-77",
+                          "children": [
+                            {
+                              "id": 43,
+                              "height": 0.0,
+                              "branch_length": 8.591186147054046,
+                              "label": "Potra2n6c14293",
+                              "children": []
+                            },
+                            {
+                              "id": 65,
+                              "height": 6.386578486169257,
+                              "branch_length": 2.204607660884789,
+                              "label": "Internal-65",
+                              "children": [
+                                {
+                                  "id": 14,
+                                  "height": 0.0,
+                                  "branch_length": 6.386578486169257,
+                                  "label": "Potra2n18c33171",
+                                  "children": []
+                                },
+                                {
+                                  "id": 40,
+                                  "height": 0.0,
+                                  "branch_length": 6.386578486169257,
+                                  "label": "Potra2n6c12922",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": 99,
+              "height": 24.642533731152728,
+              "branch_length": 14.72609065304486,
+              "label": "Internal-99",
+              "children": [
+                {
+                  "id": 87,
+                  "height": 13.096029210413361,
+                  "branch_length": 11.546504520739367,
+                  "label": "Internal-87",
+                  "children": [
+                    {
+                      "id": 18,
+                      "height": 0.0,
+                      "branch_length": 13.096029210413361,
+                      "label": "Potra2n1c3228",
+                      "children": []
+                    },
+                    {
+                      "id": 23,
+                      "height": 0.0,
+                      "branch_length": 13.096029210413361,
+                      "label": "Potra2n2c4445",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "id": 97,
+                  "height": 21.11649297762297,
+                  "branch_length": 3.5260407535297595,
+                  "label": "Internal-97",
+                  "children": [
+                    {
+                      "id": 86,
+                      "height": 12.921281447093394,
+                      "branch_length": 8.195211530529575,
+                      "label": "Internal-86",
+                      "children": [
+                        {
+                          "id": 71,
+                          "height": 7.314235481579739,
+                          "branch_length": 5.607045965513655,
+                          "label": "Internal-71",
+                          "children": [
+                            {
+                              "id": 8,
+                              "height": 0.0,
+                              "branch_length": 7.314235481579739,
+                              "label": "Potra2n14c26435",
+                              "children": []
+                            },
+                            {
+                              "id": 15,
+                              "height": 0.0,
+                              "branch_length": 7.314235481579739,
+                              "label": "Potra2n19c33972",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "id": 75,
+                          "height": 8.007869154046745,
+                          "branch_length": 4.913412293046649,
+                          "label": "Internal-75",
+                          "children": [
+                            {
+                              "id": 42,
+                              "height": 0.0,
+                              "branch_length": 8.007869154046745,
+                              "label": "Potra2n6c13749",
+                              "children": []
+                            },
+                            {
+                              "id": 68,
+                              "height": 6.718621383637172,
+                              "branch_length": 1.2892477704095722,
+                              "label": "Internal-68",
+                              "children": [
+                                {
+                                  "id": 39,
+                                  "height": 0.0,
+                                  "branch_length": 6.718621383637172,
+                                  "label": "Potra2n5c12591",
+                                  "children": []
+                                },
+                                {
+                                  "id": 60,
+                                  "height": 5.192489538747287,
+                                  "branch_length": 1.5261318448898855,
+                                  "label": "Internal-60",
+                                  "children": [
+                                    {
+                                      "id": 4,
+                                      "height": 0.0,
+                                      "branch_length": 5.192489538747287,
+                                      "label": "Potra2n11c23199",
+                                      "children": []
+                                    },
+                                    {
+                                      "id": 17,
+                                      "height": 0.0,
+                                      "branch_length": 5.192489538747287,
+                                      "label": "Potra2n1c2300",
+                                      "children": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": 96,
+                      "height": 18.852122407039477,
+                      "branch_length": 2.264370570583491,
+                      "label": "Internal-96",
+                      "children": [
+                        {
+                          "id": 84,
+                          "height": 11.785419950090876,
+                          "branch_length": 7.066702456948601,
+                          "label": "Internal-84",
+                          "children": [
+                            {
+                              "id": 21,
+                              "height": 0.0,
+                              "branch_length": 11.785419950090876,
+                              "label": "Potra2n2c4078",
+                              "children": []
+                            },
+                            {
+                              "id": 32,
+                              "height": 0.0,
+                              "branch_length": 11.785419950090876,
+                              "label": "Potra2n4c8952",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "id": 89,
+                          "height": 14.113251546684767,
+                          "branch_length": 4.7388708603547105,
+                          "label": "Internal-89",
+                          "children": [
+                            {
+                              "id": 2,
+                              "height": 0.0,
+                              "branch_length": 14.113251546684767,
+                              "label": "Potra2n10c21793",
+                              "children": []
+                            },
+                            {
+                              "id": 46,
+                              "height": 0.0,
+                              "branch_length": 14.113251546684767,
+                              "label": "Potra2n6c15350",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
