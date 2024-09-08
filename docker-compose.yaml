@@ -1,6 +1,7 @@
 services:
   web:
-    build: .
+    # build: .
+    image: heatmaps:latest
     ports:
       - "8080:80"
     volumes:
