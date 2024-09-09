@@ -6,7 +6,20 @@ import SvgCanvas from "./components/SvgCanvas";
 import HeatMap from "./components/Heatmap";
 import DropDown from "./components/DropDown";
 
+import { useAppStore } from "./state/AppStore";
+// import { useEffect } from "react";
+
 const App = () => {
+  const { geneExpressionData, setDatasetId, setClusterId } = useAppStore((state) => ({
+    setDatasetId: state.setDatasetId,
+    setClusterId: state.setClusterId,
+    geneExpressionData: state.data,
+  }));
+
+  // useEffect(() => {
+  //   setDatasetId(0);
+  // }, []);
+
   return (
     <>
       <CssBaseline />
@@ -20,16 +33,14 @@ const App = () => {
               "Picab Photosynthesis I",
               "Pinsy DNA Methylation",
             ]}
+            onOptionSelect={setDatasetId}
           />
         </Grid>
         <Grid size={{ xs: 12, sm: 12, md: 6, lg: 6 }}>
           <DropDown
             primaryLabel="Clustering"
-            options={[
-              "None",
-              "Gene",
-              "Gene and Sample",
-            ]}
+            options={["None", "Gene", "Gene and Sample"]}
+            onOptionSelect={setClusterId}
           />
         </Grid>
         <Grid
@@ -38,7 +49,7 @@ const App = () => {
           size={12}
         >
           <SvgCanvas>
-            <HeatMap />
+            {geneExpressionData ? <HeatMap /> : null}
           </SvgCanvas>
         </Grid>
       </Grid>

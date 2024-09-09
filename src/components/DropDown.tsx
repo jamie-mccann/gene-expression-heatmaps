@@ -1,20 +1,21 @@
-import * as React from "react";
+import { useState } from "react";
 import List from "@mui/material/List";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
 import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
-import { Box } from "@mui/material";
-import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
+import { Typography } from "@mui/material";
 
 interface DropDownProps {
   primaryLabel: string;
   options: string[];
+  onOptionSelect?: (index: number) => void;
 }
 
-const DropDown = ({ primaryLabel, options }: DropDownProps) => {
-  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
-  const [selectedIndex, setSelectedIndex] = React.useState(0);
+const DropDown = ({ primaryLabel, options, onOptionSelect }: DropDownProps) => {
+  const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
+  const [selectedIndex, setSelectedIndex] = useState(0);
   const open = Boolean(anchorEl);
   const handleClickListItem = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorEl(event.currentTarget);
@@ -27,6 +28,9 @@ const DropDown = ({ primaryLabel, options }: DropDownProps) => {
     event.preventDefault();
     setSelectedIndex(index);
     setAnchorEl(null);
+    if (onOptionSelect) {
+      onOptionSelect(index);
+    }
   };
 
   const handleClose = () => {
@@ -34,7 +38,7 @@ const DropDown = ({ primaryLabel, options }: DropDownProps) => {
   };
 
   return (
-    <Box>
+    <>
       <List
         component="nav"
         aria-label="Device settings"
@@ -53,8 +57,12 @@ const DropDown = ({ primaryLabel, options }: DropDownProps) => {
           aria-label="dataset-choice"
           aria-expanded={open ? "true" : undefined}
           onClick={handleClickListItem}
+          color="primary"
         >
-          <ListItemText primary={primaryLabel} secondary={options[selectedIndex]} />
+          <ListItemText
+            primary={primaryLabel}
+            secondary={options[selectedIndex]}
+          />
           <ArrowDropDownIcon />
         </ListItemButton>
       </List>
@@ -67,19 +75,27 @@ const DropDown = ({ primaryLabel, options }: DropDownProps) => {
           "aria-labelledby": "lock-button",
           role: "listbox",
         }}
-        anchorOrigin={{vertical: "bottom", horizontal: "left"}}
+        anchorOrigin={{ vertical: "bottom", horizontal: "left" }}
+        variant="menu"
+        slotProps={{
+          paper: {
+            style: { maxHeight: 48 * 2.5 },
+          },
+        }}
       >
         {options.map((option, index) => (
           <MenuItem
-            key={option}
+            key={index}
             selected={index === selectedIndex}
             onClick={(event) => handleMenuItemClick(event, index)}
           >
-            {option}
+            <Typography key={index} variant="subtitle2">
+              {option}
+            </Typography>
           </MenuItem>
         ))}
       </Menu>
-    </Box>
+    </>
   );
 };
 

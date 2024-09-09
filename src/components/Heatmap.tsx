@@ -3,13 +3,17 @@ import { motion } from "framer-motion";
 import { scaleLinear } from "d3-scale";
 import {
   // interpolateYlOrRd,
-  interpolateViridis,
+  // interpolateViridis,
   // interpolateTurbo,
   // interpolateSpectral,
+  // interpolateRdBu,
+  interpolateRdYlBu,
 } from "d3-scale-chromatic";
 
 import { useAppStore } from "../state/AppStore";
-import geneExpressionData from "../assets/data/ordered_by_gene_cluster_ge_data.json";
+// import geneExpressionData from "../assets/data/ordered_by_gene_cluster_ge_data.json";
+// import geneExpressionData from "../assets/data/ordered_by_gene_and_sample_cluster_ge_data.json";
+// import geneExpressionData from "../assets/data/original_order_ge_data.json";
 
 interface ChartDimensions {
   marginTop: number;
@@ -37,11 +41,14 @@ const HeatMap = ({ dimensions = defaultSettings }: HeatMapProps) => {
   const [xAxisLabelLength, setXAxisLabelLength] = useState<number>(0);
   const [yAxisLabelLength, setYAxisLabelLength] = useState<number>(0);
 
-  const { svgWidth, svgHeight, svgRef } = useAppStore((state) => ({
-    svgWidth: state.width,
-    svgHeight: state.height,
-    svgRef: state.svgRef,
-  }));
+  const { svgWidth, svgHeight, svgRef, geneExpressionData } = useAppStore(
+    (state) => ({
+      svgWidth: state.width,
+      svgHeight: state.height,
+      svgRef: state.svgRef,
+      geneExpressionData: state.data!,
+    })
+  );
 
   useEffect(() => {
     if (svgRef?.current) {
@@ -100,7 +107,9 @@ const HeatMap = ({ dimensions = defaultSettings }: HeatMapProps) => {
       scaleLinear()
         .domain([0, geneExpressionData.ngenes])
         .range([
-          dimensions.marginTop + xAxisLabelLength * Math.sin(Math.PI / 4) + dimensions.labelPadding,
+          dimensions.marginTop +
+            xAxisLabelLength * Math.sin(Math.PI / 4) +
+            dimensions.labelPadding,
           svgHeight - dimensions.marginBottom,
         ]),
     [svgHeight, xAxisLabelLength]
@@ -116,7 +125,7 @@ const HeatMap = ({ dimensions = defaultSettings }: HeatMapProps) => {
             y={yScale(value.row)}
             width={Math.abs(xScale(0) - xScale(1))}
             height={Math.abs(yScale(0) - yScale(1))}
-            fill={interpolateViridis(value.value)}
+            fill={interpolateRdYlBu(1 - value.value)}
             stroke="white"
             strokeWidth={1}
             paintOrder="fill"

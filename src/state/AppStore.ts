@@ -1,8 +1,14 @@
 import { create } from "zustand";
 
-import { SvgCanvasSlice } from "./SliceTypes";
-import { createSvgCanvasSlice } from "./SliceCreators";
+import { GeneExpressionDataSlice, SvgCanvasSlice } from "./SliceTypes";
+import {
+  createGeneExpressionDataSlice,
+  createSvgCanvasSlice,
+} from "./SliceCreators";
 
-export const useAppStore = create<SvgCanvasSlice>()((...storeArgs) => ({
-  ...createSvgCanvasSlice(...storeArgs),
-}));
+export const useAppStore = create<SvgCanvasSlice & GeneExpressionDataSlice>()(
+  (...storeArgs) => ({
+    ...createSvgCanvasSlice(...storeArgs),
+    ...createGeneExpressionDataSlice(...storeArgs),
+  })
+);
