@@ -79,8 +79,6 @@ const HeatMap = ({ dimensions = defaultSettings }: HeatMapProps) => {
     }
   }, [svgHeight, svgWidth]);
 
-  console.log(xAxisLabelLength, yAxisLabelLength);
-
   const xScale = useMemo(
     () =>
       scaleLinear()
