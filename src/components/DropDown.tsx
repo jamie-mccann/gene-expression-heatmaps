@@ -10,9 +10,10 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 interface DropDownProps {
   primaryLabel: string;
   options: string[];
+  onOptionSelect?: (index: number) => void;
 }
 
-const DropDown = ({ primaryLabel, options }: DropDownProps) => {
+const DropDown = ({ primaryLabel, options, onOptionSelect }: DropDownProps) => {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const [selectedIndex, setSelectedIndex] = React.useState(0);
   const open = Boolean(anchorEl);
@@ -27,6 +28,10 @@ const DropDown = ({ primaryLabel, options }: DropDownProps) => {
     event.preventDefault();
     setSelectedIndex(index);
     setAnchorEl(null);
+
+    if (onOptionSelect) {
+      onOptionSelect(index);
+    }
   };
 
   const handleClose = () => {

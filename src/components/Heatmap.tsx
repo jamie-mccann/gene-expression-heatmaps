@@ -3,13 +3,16 @@ import { motion } from "framer-motion";
 import { scaleLinear } from "d3-scale";
 import {
   // interpolateYlOrRd,
-  interpolateViridis,
+  // interpolateViridis,
   // interpolateTurbo,
   // interpolateSpectral,
+  // interpolateRdBu,
+  interpolateRdYlBu,
 } from "d3-scale-chromatic";
 
 import { useAppStore } from "../state/AppStore";
-import geneExpressionData from "../assets/data/ordered_by_gene_cluster_ge_data.json";
+// import geneExpressionData from "../assets/data/ordered_by_gene_cluster_ge_data.json";
+import { GeneExpressionData } from "../state/SliceTypes";
 
 interface ChartDimensions {
   marginTop: number;
@@ -22,6 +25,7 @@ interface ChartDimensions {
 
 interface HeatMapProps {
   dimensions?: ChartDimensions;
+  geneExpressionData: GeneExpressionData;
 }
 
 const defaultSettings = {
@@ -33,7 +37,7 @@ const defaultSettings = {
   labelPadding: 5,
 };
 
-const HeatMap = ({ dimensions = defaultSettings }: HeatMapProps) => {
+const HeatMap = ({ dimensions = defaultSettings, geneExpressionData }: HeatMapProps) => {
   const [xAxisLabelLength, setXAxisLabelLength] = useState<number>(0);
   const [yAxisLabelLength, setYAxisLabelLength] = useState<number>(0);
 
@@ -114,7 +118,7 @@ const HeatMap = ({ dimensions = defaultSettings }: HeatMapProps) => {
             y={yScale(value.row)}
             width={Math.abs(xScale(0) - xScale(1))}
             height={Math.abs(yScale(0) - yScale(1))}
-            fill={interpolateViridis(value.value)}
+            fill={interpolateRdYlBu(value.value)}
             stroke="white"
             strokeWidth={1}
             paintOrder="fill"
