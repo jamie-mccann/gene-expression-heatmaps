@@ -1,7 +1,7 @@
 services:
   web:
     # build: .
-    image: heatmaps:latest
+    image: heatmaps:local-latest
     ports:
       - "8080:80"
     volumes:
