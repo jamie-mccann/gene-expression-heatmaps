@@ -1,14 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import { scaleLinear } from "d3-scale";
-import {
-  // interpolateYlOrRd,
-  // interpolateViridis,
-  // interpolateTurbo,
-  // interpolateSpectral,
-  // interpolateRdBu,
-  interpolateRdYlBu,
-} from "d3-scale-chromatic";
+import { interpolateRdYlBu } from "d3-scale-chromatic";
 
 import { useAppStore } from "../state/AppStore";
 import { GeneExpressionData } from "../state/SliceTypes";
@@ -36,7 +29,10 @@ const defaultSettings = {
   labelPadding: 5,
 };
 
-const HeatMap = ({ dimensions = defaultSettings, geneExpressionData }: HeatMapProps) => {
+const HeatMap = ({
+  dimensions = defaultSettings,
+  geneExpressionData,
+}: HeatMapProps) => {
   const [xAxisLabelLength, setXAxisLabelLength] = useState<number>(0);
   const [yAxisLabelLength, setYAxisLabelLength] = useState<number>(0);
 
@@ -101,7 +97,9 @@ const HeatMap = ({ dimensions = defaultSettings, geneExpressionData }: HeatMapPr
       scaleLinear()
         .domain([0, geneExpressionData.ngenes])
         .range([
-          dimensions.marginTop + xAxisLabelLength * Math.sin(Math.PI / 4) + dimensions.labelPadding,
+          dimensions.marginTop +
+            xAxisLabelLength * Math.sin(Math.PI / 4) +
+            dimensions.labelPadding,
           svgHeight - dimensions.marginBottom,
         ]),
     [svgHeight, xAxisLabelLength]
@@ -109,7 +107,7 @@ const HeatMap = ({ dimensions = defaultSettings, geneExpressionData }: HeatMapPr
 
   return (
     <>
-      <motion.g className="rectangles">
+      <g className="rectangles">
         {geneExpressionData.matrix.map((value, index) => (
           <motion.rect
             key={index}
@@ -123,21 +121,21 @@ const HeatMap = ({ dimensions = defaultSettings, geneExpressionData }: HeatMapPr
             paintOrder="fill"
             opacity={1}
             whileHover={{
-              transition: { duration: 0.7 },
-              opacity: 0.5,
+              transition: { duration: 0.5 },
+              opacity: 0.6,
             }}
           >
-            <motion.title>{`Sample ID: ${
+            <title>{`Sample ID: ${
               geneExpressionData.samples[value.col].id
             } \u000ASample Desc: ${
               geneExpressionData.samples[value.col].desc
             }  \u000AGene ID: ${
               geneExpressionData.genes[value.row].id
-            } \u000AValue: ${value.value}`}</motion.title>
+            } \u000AValue: ${value.value}`}</title>
           </motion.rect>
         ))}
-      </motion.g>
-      <motion.g className="gene-labels">
+      </g>
+      <g className="gene-labels">
         {geneExpressionData.genes.map((value, index) => (
           <motion.text
             key={index}
@@ -147,19 +145,19 @@ const HeatMap = ({ dimensions = defaultSettings, geneExpressionData }: HeatMapPr
             fontSize={dimensions.labelFontSize}
             textAnchor="left"
             dominantBaseline="middle"
-            fontFamily="Roboto"
+            fontFamily="Arial"
             fontWeight="normal"
             whileHover={{
-              transition: { duration: 0.7},
-              fontWeight: "bold"
+              transition: { duration: 0.7 },
+              fontWeight: "bold",
             }}
           >
             {value.id}
-            <motion.title>{value.id}</motion.title>
+            <title>{value.id}</title>
           </motion.text>
         ))}
-      </motion.g>
-      <motion.g className="sample-labels">
+      </g>
+      <g className="sample-labels">
         {geneExpressionData.samples.map((value, index) => (
           <motion.text
             key={index}
@@ -169,18 +167,18 @@ const HeatMap = ({ dimensions = defaultSettings, geneExpressionData }: HeatMapPr
             fontSize={dimensions.labelFontSize}
             dominantBaseline="middle"
             textAnchor="left"
-            fontFamily="Roboto"
+            fontFamily="Arial"
             fontWeight="normal"
             whileHover={{
-              transition: { duration: 0.7},
-              fontWeight: "bold"
+              transition: { duration: 0.9 },
+              fontWeight: "bold",
             }}
           >
             {value.id}
-            <motion.title>{value.desc}</motion.title>
+            <title>{value.desc}</title>
           </motion.text>
         ))}
-      </motion.g>
+      </g>
     </>
   );
 };
