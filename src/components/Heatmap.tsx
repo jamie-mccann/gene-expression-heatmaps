@@ -11,7 +11,6 @@ import {
 } from "d3-scale-chromatic";
 
 import { useAppStore } from "../state/AppStore";
-// import geneExpressionData from "../assets/data/ordered_by_gene_cluster_ge_data.json";
 import { GeneExpressionData } from "../state/SliceTypes";
 
 interface ChartDimensions {
@@ -149,6 +148,11 @@ const HeatMap = ({ dimensions = defaultSettings, geneExpressionData }: HeatMapPr
             textAnchor="left"
             dominantBaseline="middle"
             fontFamily="Roboto"
+            fontWeight="normal"
+            whileHover={{
+              transition: { duration: 0.7},
+              fontWeight: "bold"
+            }}
           >
             {value.id}
             <motion.title>{value.id}</motion.title>
@@ -166,6 +170,11 @@ const HeatMap = ({ dimensions = defaultSettings, geneExpressionData }: HeatMapPr
             dominantBaseline="middle"
             textAnchor="left"
             fontFamily="Roboto"
+            fontWeight="normal"
+            whileHover={{
+              transition: { duration: 0.7},
+              fontWeight: "bold"
+            }}
           >
             {value.id}
             <motion.title>{value.desc}</motion.title>

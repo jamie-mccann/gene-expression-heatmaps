@@ -8,16 +8,16 @@ import DropDown from "./components/DropDown";
 import { useAppStore } from "./state/AppStore";
 import { useEffect } from "react";
 
+import geneExpressionDataSubstitute from "./assets/data/ordered_by_gene_cluster_ge_data.json";
+
 const App = () => {
-  const [geneExpressionData, setDatasetId, setClusterId] = useAppStore((state) => [
-    state.data,
-    state.setDatasetId,
-    state.setClusterId,
-  ]);
+  const [geneExpressionData, setDatasetId, setClusterId] = useAppStore(
+    (state) => [state.data, state.setDatasetId, state.setClusterId]
+  );
 
   useEffect(() => {
     setDatasetId(0);
-  }, [])
+  }, []);
 
   return (
     <>
@@ -48,7 +48,11 @@ const App = () => {
           size={12}
         >
           <SvgCanvas>
-            {geneExpressionData ? <HeatMap geneExpressionData={geneExpressionData} /> : null}
+            {geneExpressionData ? (
+              <HeatMap geneExpressionData={geneExpressionData} />
+            ) : (
+              <HeatMap geneExpressionData={geneExpressionDataSubstitute} />
+            )}
           </SvgCanvas>
         </Grid>
       </Grid>
